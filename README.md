@@ -61,7 +61,8 @@ datasets
 ```
 ---
 ### Add your own dataset
-We use this ![tool](images/label_tool.png) to add data
+You can download our label tool here
+![tools](images/label_tool.png)
 
 ##### Requirements
 
