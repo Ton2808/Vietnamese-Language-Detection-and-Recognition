@@ -62,25 +62,27 @@ datasets
 ---
 ### Add your own dataset
 We use this ![tool](images/label_tool.png) to add data
-### Getting Started
 
 ##### Requirements
 
 - python=3.7
-- torch==1.4.0
-- detectron2==0.2
+- torch==1.8.0
 
 ##### Installation
 
 ```sh
-conda create -n dict-guided -y python=3.7
-conda activate dict-guided
-conda install -y pytorch torchvision cudatoolkit=10.0 -c pytorch
+conda create -n fb -y python=3.7
+conda activate fb
+
+#for CPU users
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cpuonly -c pytorch
+#for GPU users
+conda install pytorch=1.8.0 torchvision=0.9.0 cudatoolkit=11.1 -c pytorch -c conda-forge
+
 python -m pip install ninja yacs cython matplotlib tqdm opencv-python shapely scipy tensorboardX pyclipper Polygon3 weighted-levenshtein editdistance
 
 # Install Detectron2
-python -m pip install detectron2==0.2 -f \
-  https://dl.fbaipublicfiles.com/detectron2/wheels/cu100/torch1.4/index.html
+python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 ### Check out the code and install: 
 ```sh
@@ -95,6 +97,8 @@ python setup.py build develop
 
 ##### Usage
 
+### Run on Ubuntu or Windows
+
 Prepare folders
 ```sh
 mkdir sample_input
@@ -102,11 +106,45 @@ mkdir sample_output
 ```
 Copy your images to ```sample_input/```. Output images would result in ```sample_output/```
 ```sh
-python demo/demo.py --config-file configs/BAText/VinText/attn_R_50.yaml --input sample_input/ --output sample_output/ --opts MODEL.WEIGHTS path-to-trained_model-checkpoint
+python demo/demo.py --config-file configs/BAText/VinText/attn_R_50.yaml --input data/test_data --output sample_output/ --opts MODEL.WEIGHTS ./save_models/bbox.pth
 ```
 | ![qualitative results.png](https://user-images.githubusercontent.com/32253603/120606555-836d5700-c479-11eb-9a37-09fa8cc129f3.png) |
 |:--:|
 | *Qualitative Results on VinText.*|
+
+### Run on Docker
+
+Download and unzip FantasticBeasts.zip
+- [FantasticBeasts.zip](https://drive.google.com/file/d/10qYIcp8HIukuwPMnvpoWN7wTmQgXzm7p/view?usp=sharing).
+
+```sh
+unzip FantasticBeasts.zip
+cd FantasticBeasts/Docker
+```
+
+Open Docker and load docker images
+```sh
+#for CPU users
+docker load fantasticbeasts-aic-cpu.tar
+
+#for GPU users with NIVIDA docker toolkit
+docker load fantasticbeasts-aic-gpu.tar
+```
+
+Create folders and copy the path
+```sh
+mkdir test_data
+mkdir submission_output
+```
+
+Run Docker images
+```sh
+#for CPU users
+docker run --mount type=bind,source=[test_data_folder_path],target=/home/ml/AIC/aicsolution/data/test_data --mount type=bind,source=[submission_output_folder_path],target=/home/ml/AIC/aicsolution/data/submission_output [IMAGE ID] /bin/bash run.sh
+
+#for GPU users with NIVIDA docker toolkit
+nvidia-docker run -it --rm --gpus all --mount type=bind,source=[test_data_folder_path],target=/home/ml/AIC/aicsolution/data/test_data --mount type=bind,source=[submission_output_folder_path],target=/home/ml/AIC/aicsolution/data/submission_output [image ID] /bin/bash run.sh
+```
 
 ### Training and Evaluation
 
