@@ -86,7 +86,7 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 ### Check out the code and install: 
 ```sh
-git clone https://github.com/nguyennm1024/dict-guided.git
+git clone https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition.git
 cd dict-guided
 python setup.py build develop
 ```
