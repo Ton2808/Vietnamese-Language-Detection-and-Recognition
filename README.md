@@ -33,16 +33,11 @@ Details of the dataset construction, model architecture, and experimental result
 
 ### Dataset
 
-We introduce ✨ a new VinText dataset. 
-> ***By downloading this dataset, USER agrees:***
-> 
-> * to use this dataset for research or educational purposes only
-> * to not distribute or part of this dataset in any original or modified form.
-> * and to [cite our paper](#dictionary-guided-scene-text-recognition) whenever this dataset are employed to help produce published results.
+We use a dataset based on [VinText dataset](#dictionary-guided-scene-text-recognition) combine with different picture we found on google. 
 
 |    Name  						  | #imgs | #text instances						   | Examples 									|
 |:-------------------------------:|:-----:|:-----------------------------------|:----------------------------------:|
-|VinText| 2000  | About 56000 			   |![example.png](https://user-images.githubusercontent.com/32253603/120605880-c67afa80-c478-11eb-8a2a-039a1d316503.png)|
+|VinTextV2| 3800  | About 92000 			   |![example.png](https://user-images.githubusercontent.com/32253603/120605880-c67afa80-c478-11eb-8a2a-039a1d316503.png)|
 
 Detail about ✨ VinText dataset can be found in [our paper](https://www3.cs.stonybrook.edu/~minhhoai/papers/vintext_CVPR21.pdf).
 Download ***Converted dataset*** to try with our model
@@ -52,7 +47,7 @@ Download ***Converted dataset*** to try with our model
 |Original| x1,y1,x2,y2,x3,y3,x4,y4,TRANSCRIPT  |[Download here](https://drive.google.com/file/d/1UUQhNvzgpZy7zXBFQp0Qox-BBjunZ0ml/view?usp=sharing)|
 |Converted dataset| [COCO format](https://cocodataset.org/#format-data)  |[Download here](https://drive.google.com/file/d/1AXl2iOTvLtMG8Lg2iU6qVta8VuWSXyns/view?usp=sharing)|
 ### VinText
-Extract data and copy folder to folder ```datasets/```
+Extract data and copy folder to folder ```Vietnamese-Language-Detection-and-Recognition/datasets/```
 
 ```
 datasets
@@ -65,7 +60,8 @@ datasets
 	└───gt_vintext.zip
 ```
 ---
-
+### Add your own dataset
+We use this ![tool](images/label_tool) to add data
 ### Getting Started
 
 ##### Requirements
