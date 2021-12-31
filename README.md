@@ -1,12 +1,12 @@
 ##### Table of Content
 
-1. [Introduction (Khôi viết)](#dictionary-guided-scene-text-recognition)
-1. [Dataset (đổi link thui thành 3k5 ảnh mình)](#dataset)
-1. [Getting Started (An Viết)](#getting-started)
+1. [Introduction](#dictionary-guided-scene-text-recognition)
+1. [Dataset](#dataset)
+1. [Getting Started](#getting-started)
 	- [Requirements](#requirements)
 	- [Usage Example](#usage)
-1. [Training & Evaluation (Tấn + Quỳnh viết)](#training-and-evaluation)
-1. [Acknowledgement (đổi link thui)](#acknowledgement)
+1. [Training & Evaluation](#training-and-evaluation)
+1. [Acknowledgement](#acknowledgement)
 
 # Dictionary-guided Scene Text Recognition
 
