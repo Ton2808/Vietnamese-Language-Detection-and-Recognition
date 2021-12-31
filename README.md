@@ -68,7 +68,7 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ### Check out the code and install: 
 ```sh
 git clone https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition.git
-cd dict-guided
+cd Vietnamese-Language-Detection-and-Recognition
 python setup.py build develop
 ```
 
