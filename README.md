@@ -10,26 +10,8 @@
 
 # Dictionary-guided Scene Text Recognition
 
-- We propose a novel dictionary-guided sense text recognition approach that could be used to improve many state-of-the-art models.
+In progress 
 
-
-| ![architecture.png](https://user-images.githubusercontent.com/32253603/117981172-ebd78580-b35e-11eb-84fe-b97c8d15d8bf.png) |
-|:--:|
-| *Comparison between the traditional approach and our proposed approach.*|
-
-Details of the dataset construction, model architecture, and experimental results can be found in [our following paper](https://www3.cs.stonybrook.edu/~minhhoai/papers/vintext_CVPR21.pdf):
-
-```
-@inproceedings{m_Nguyen-etal-CVPR21,
-      author = {Nguyen Nguyen and Thu Nguyen and Vinh Tran and Triet Tran and Thanh Ngo and Thien Nguyen and Minh Hoai},
-      title = {Dictionary-guided Scene Text Recognition},
-      year = {2021},
-      booktitle = {Proceedings of the {IEEE} Conference on Computer Vision and Pattern Recognition (CVPR)},
-    }
-```
-**Please CITE** our paper whenever our dataset or model implementation is used to help produce published results or incorporated into other software.
-
----
 
 ### Dataset
 
