@@ -1,18 +1,29 @@
-##### Table of Content
 
-1. [Introduction](#Vietnamese-scene-text-recognition)
-1. [Dataset](#dataset)
-1. [Detection] 
-1. 	-[Getting Started](#getting-started)
-1.		- [Requirements](#requirements)
-1.		- [Usage Example](#usage)
-1.		-[Training & Evaluation](#training-and-evaluation)
-1. 	-[Acknowledgement](#acknowledgement)
-1. [Recognition] 
-
+- [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
+		- [Dataset](#dataset)
+			- [VinTextV2](#vintextv2)
+			- [Add your own dataset](#add-your-own-dataset)
+	- [Dectection](#dectection)
+				- [Requirements](#requirements)
+				- [Installation](#installation)
+			- [Check out the code and install:](#check-out-the-code-and-install)
+				- [Download vintext pre-trained model](#download-vintext-pre-trained-model)
+				- [Usage](#usage)
+			- [Run on Ubuntu or Windows](#run-on-ubuntu-or-windows)
+			- [Run on Docker](#run-on-docker)
+			- [Training and Evaluation](#training-and-evaluation)
+				- [Training](#training)
+				- [Evaluation](#evaluation)
+			- [Acknowledgement](#acknowledgement)
+	- [Recognition](#recognition)
+				- [Installation](#installation-1)
+				- [Dataset](#dataset-1)
+				- [Getting started](#getting-started)
+			- [Acknowledgement](#acknowledgement-1)
+  
 # Vietnamese-scene-text-recognition
 
-In progress 
+This is the solution that ranked 6th in [AI Challenge 2021] (https://aichallenge.hochiminhcity.gov.vn)
 
 
 ### Dataset
@@ -166,7 +177,6 @@ Using TransformerOCR
 ##### Installation
 - pip install vietocr==0.3.7
 ##### Dataset
-#### VinTextV2
 Extract data and copy folder to folder ```Vietnamese-Language-Detection-and-Recognition/recognition/dataset/```
 
 ```
