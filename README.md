@@ -3,11 +3,11 @@
 1. [Introduction](#Vietnamese-scene-text-recognition)
 1. [Dataset](#dataset)
 2. [Detection] (#Detection)
- 	-[Getting Started](#getting-started)
-		- [Requirements](#requirements)
-		- [Usage Example](#usage)
- 		-[Training & Evaluation](#training-and-evaluation)
- 	-[Acknowledgement](#acknowledgement)
+1. 	-[Getting Started](#getting-started)
+1.		- [Requirements](#requirements)
+1.		- [Usage Example](#usage)
+1.		-[Training & Evaluation](#training-and-evaluation)
+1. 	-[Acknowledgement](#acknowledgement)
 3. [Recognition] (#Recognition) 
 
 # Vietnamese-scene-text-recognition
