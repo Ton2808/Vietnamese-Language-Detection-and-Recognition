@@ -1,14 +1,16 @@
 ##### Table of Content
 
-1. [Introduction](#dictionary-guided-scene-text-recognition)
+1. [Introduction](#Vietnamese-scene-text-recognition)
 1. [Dataset](#dataset)
-1. [Getting Started](#getting-started)
-	- [Requirements](#requirements)
-	- [Usage Example](#usage)
-1. [Training & Evaluation](#training-and-evaluation)
-1. [Acknowledgement](#acknowledgement)
+2. [Detection] (#Detection)
+ 	-[Getting Started](#getting-started)
+		- [Requirements](#requirements)
+		- [Usage Example](#usage)
+ 		-[Training & Evaluation](#training-and-evaluation)
+ 	-[Acknowledgement](#acknowledgement)
+3. [Recognition] (#Recognition) 
 
-# Dictionary-guided Scene Text Recognition
+# Vietnamese-scene-text-recognition
 
 In progress 
 
@@ -26,7 +28,7 @@ We use a dataset based on [VinText dataset](https://www3.cs.stonybrook.edu/~minh
 |:-------------------------------:|:-----:|:----------------------------------:|
 |Original| x1,y1,x2,y2,x3,y3,x4,y4,TRANSCRIPT  |[Download here](https://drive.google.com/file/d/1UUQhNvzgpZy7zXBFQp0Qox-BBjunZ0ml/view?usp=sharing)|
 |Converted dataset| [COCO format](https://cocodataset.org/#format-data)  |[Download here](https://drive.google.com/file/d/1AXl2iOTvLtMG8Lg2iU6qVta8VuWSXyns/view?usp=sharing)|
-### VinTextV2
+#### VinTextV2
 Extract data and copy folder to folder ```Vietnamese-Language-Detection-and-Recognition/datasets/```
 
 ```
@@ -40,9 +42,11 @@ datasets
 	└───gt_vintext.zip
 ```
 ---
-### Add your own dataset
+#### Add your own dataset
 You can download our label tool [here](https://drive.google.com/drive/folders/1XcUnjJ2eOcXM0JOlYjAVQnnKP2Xx8FHV?usp=sharing)
 ![tools](images/label_tool.png)
+
+### Dectection
 
 ##### Requirements
 
@@ -65,7 +69,7 @@ python -m pip install ninja yacs cython matplotlib tqdm opencv-python shapely sc
 # Install Detectron2
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
-### Check out the code and install: 
+#### Check out the code and install: 
 ```sh
 git clone https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition.git
 cd Vietnamese-Language-Detection-and-Recognition
@@ -78,7 +82,7 @@ python setup.py build develop
 
 ##### Usage
 
-### Run on Ubuntu or Windows
+#### Run on Ubuntu or Windows
 
 Prepare folders
 ```sh
@@ -93,7 +97,7 @@ python demo/demo.py --config-file configs/BAText/VinText/attn_R_50.yaml --input 
 |:--:|
 | *Qualitative Results on VinText.*|
 
-### Run on Docker
+#### Run on Docker
 
 Download and unzip FantasticBeasts.zip
 - [FantasticBeasts.zip](https://drive.google.com/file/d/10qYIcp8HIukuwPMnvpoWN7wTmQgXzm7p/view?usp=sharing).
@@ -127,10 +131,10 @@ docker run --mount type=bind,source=[test_data_folder_path],target=/home/ml/AIC/
 nvidia-docker run -it --rm --gpus all --mount type=bind,source=[test_data_folder_path],target=/home/ml/AIC/aicsolution/data/test_data --mount type=bind,source=[submission_output_folder_path],target=/home/ml/AIC/aicsolution/data/submission_output [image ID] /bin/bash run.sh
 ```
 
-### Training and Evaluation
+#### Training and Evaluation
 
 
-#### Training
+##### Training
 
 For training, we employed the pre-trained model [tt_attn_R_50](https://cloudstor.aarnet.edu.au/plus/s/tYsnegjTs13MwwK/download) from the ABCNet repository for initialization.
 
@@ -145,7 +149,7 @@ python tools/train_net.py --config-file configs/BAText/VinText/attn_R_50.yaml MO
 
 Trained model output will be saved in the folder ```output/batext/vintext/``` that is then used for evaluation
 
-#### Evaluation
+##### Evaluation
 
 ```sh
 python tools/train_net.py --eval-only --config-file configs/BAText/VinText/attn_R_50.yaml MODEL.WEIGHTS path_to_trained_model_checkpoint
@@ -154,5 +158,13 @@ Example:
 ```sh
 python tools/train_net.py --eval-only --config-file configs/BAText/VinText/attn_R_50.yaml MODEL.WEIGHTS ./output/batext/vintext/trained_model.pth
 ```
-### Acknowledgement
+#### Acknowledgement
 This repository is built based-on [ABCNet](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/BAText)
+
+### Recognition
+Using TransformerOCR
+##### Installation
+- pip install vietocr==0.3.7
+##### Getting started
+Followed this Jupiter Notebook for quick start. (
+
