@@ -165,6 +165,20 @@ This repository is built based-on [ABCNet](https://github.com/aim-uofa/AdelaiDet
 Using TransformerOCR
 ##### Installation
 - pip install vietocr==0.3.7
+##### Dataset
+#### VinTextV2
+Extract data and copy folder to folder ```Vietnamese-Language-Detection-and-Recognition/recognition/dataset/```
+
+```
+datasets
+└───train
+└───valid
+│train.txt
+|valid.txt
+```
+---
 ##### Getting started
-Followed this Jupiter Notebook for quick start. (
+- Using detection result in detection task. Then cut out the bounding box picture to train and predict.
+
+Followed this Jupiter Notebook for quick start. 
 
