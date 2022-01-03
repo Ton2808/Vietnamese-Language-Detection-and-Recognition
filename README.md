@@ -2,11 +2,11 @@
 ## Table of content
 ### [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
 ### [Dataset](#dataset)
-##### [VinTextV2](#vintextv2)
-##### [Add your own dataset](#add-your-own-dataset)
+- [VinTextV2](#vintextv2)
+- [Add your own dataset](#add-your-own-dataset)
 ### [Detection](#detection)
-##### [Requirements](#requirements)
-##### [Installation](#installation)
+- [Requirements](#requirements)
+- [Installation](#installation)
 ### [Run on Ubuntu or Windows](#run-on-ubuntu-or-windows)
 ### [Run on Docker](#run-on-docker)
 ##### [Training and Evaluation](#training-and-evaluation)
@@ -14,10 +14,10 @@
 - [Evaluation](#evaluation)
 ##### [Acknowledgement](#acknowledgement)
 ### [Recognition](#recognition)
-##### [Installation](#installation-1)
-##### [Dataset](#dataset-1)
-##### [Getting started](#getting-started)
-##### [Acknowledgement](#acknowledgement-1)
+- [Installation](#installation-1)
+- [Dataset](#dataset-1)
+- [Getting started](#getting-started)
+- [Acknowledgement](#acknowledgement-1)
   
 # Vietnamese-scene-text-recognition
 
