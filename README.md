@@ -46,7 +46,7 @@ datasets
 You can download our label tool [here](https://drive.google.com/drive/folders/1XcUnjJ2eOcXM0JOlYjAVQnnKP2Xx8FHV?usp=sharing)
 ![tools](images/label_tool.png)
 
-### Dectection
+## Dectection
 
 ##### Requirements
 
@@ -161,7 +161,7 @@ python tools/train_net.py --eval-only --config-file configs/BAText/VinText/attn_
 #### Acknowledgement
 This repository is built based-on [ABCNet](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/BAText)
 
-### Recognition
+## Recognition
 Using TransformerOCR
 ##### Installation
 - pip install vietocr==0.3.7
@@ -181,3 +181,5 @@ datasets
 - Using detection result in detection task. Then cut out the bounding box picture to train and predict.
 
 Followed this Jupiter Notebook for quick start. (https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition/blob/main/Recognition/Train_AIC_vocr-2.ipynb)
+#### Acknowledgement
+This repository is built based-on [VietOCR](https://github.com/pbcquoc/vietocr)
