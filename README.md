@@ -187,6 +187,6 @@ datasets
 ##### Getting started
 - Using detection result in detection task. Then cut out the bounding box picture to train and predict.
 
-Followed this Jupiter Notebook for quick start. (https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition/blob/main/Recognition/Train_AIC_vocr-2.ipynb)
+Followed this [Jupiter Notebook](https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition/blob/main/Recognition/Train_AIC_vocr-2.ipynb) for quick start. 
 #### Acknowledgement
 This repository is built based-on [VietOCR](https://github.com/pbcquoc/vietocr)
