@@ -1,3 +1,6 @@
+# Vietnamese-scene-text-recognition
+
+This is the solution that ranked 6th in [AI Challenge 2021] (https://aichallenge.hochiminhcity.gov.vn)
 
 ## Table of content
 ### [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
@@ -19,10 +22,6 @@
 - [Getting started](#getting-started)
 - [Acknowledgement](#acknowledgement-1)
   
-# Vietnamese-scene-text-recognition
-
-This is the solution that ranked 6th in [AI Challenge 2021] (https://aichallenge.hochiminhcity.gov.vn)
-
 
 ### Dataset
 
