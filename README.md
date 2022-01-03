@@ -29,7 +29,7 @@ We use a dataset based on [VinText dataset](https://www3.cs.stonybrook.edu/~minh
 |Original| x1,y1,x2,y2,x3,y3,x4,y4,TRANSCRIPT  |[Download here](https://drive.google.com/file/d/1UUQhNvzgpZy7zXBFQp0Qox-BBjunZ0ml/view?usp=sharing)|
 |Converted dataset| [COCO format](https://cocodataset.org/#format-data)  |[Download here](https://drive.google.com/file/d/1AXl2iOTvLtMG8Lg2iU6qVta8VuWSXyns/view?usp=sharing)|
 #### VinTextV2
-Extract data and copy folder to folder ```Vietnamese-Language-Detection-and-Recognition/datasets/```
+Extract data and copy folder to folder ```Vietnamese-Language-Detection-and-Recognition/Detection/datasets/```
 
 ```
 datasets
