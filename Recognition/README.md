@@ -16,11 +16,8 @@ Mô hình VietOCR có tính tổng quát cực tốt, thậm chí có độ chí
 # Cài Đặt
 Để cài đặt các bạn gõ lệnh sau
 ```
-pip install vietocr==0.3.5
+pip install vietocr==0.3.7
 ```
-# Quick Start
-Các bạn tham khảo notebook [này](https://github.com/pbcquoc/vietocr/blob/master/vietocr_gettingstart.ipynb) để biết cách sử dụng nhé. 
-
 # Model Zoo 
 Thư viện này cài đặt cả 2 kiểu seq model đó là attention seq2seq và transfomer. Seq2seq có tốc độ dự đoán rất nhanh và được dùng trong industry khá nhiều, tuy nhiên transformer lại chính xác hơn nhưng lúc dự đoán lại khá chậm. Do đó mình cung cấp cả 2 loại cho các bạn lựa chọn. 
 
@@ -39,6 +36,3 @@ Thời gian dự đoán của mô hình vgg-transformer quá lâu so với mô h
 Mình chỉ cung cấp tập dữ liệu mẫu khoảng 1m ảnh tự phát sinh. Các bạn có thể tải về tại [đây](https://drive.google.com/file/d/1T0cmkhTgu3ahyMIwGZeby612RpVdDxOR/view).
 # License
 Mình phát hành thư viện này dưới các điều khoản của [Apache 2.0 license]().
-
-# Liên hệ
-Nếu bạn có bất kì vấn đề gì, vui lòng tạo issue hoặc liên hệ mình tại pbcquoc@gmail.com 
