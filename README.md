@@ -1,26 +1,23 @@
 
-###Table of content
-1. [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
-1. 		[Dataset](#dataset)
-1. 			- [VinTextV2](#vintextv2)
-1. 			- [Add your own dataset](#add-your-own-dataset)
-1.	[Dectection](#dectection)
-1.		[Requirements](#requirements)
-1.		[Installation](#installation)
-1.			- [Check out the code and install:](#check-out-the-code-and-install)
-1.				- [Download vintext pre-trained model](#download-vintext-pre-trained-model)
-1.				- [Usage](#usage)
-1.		[Run on Ubuntu or Windows](#run-on-ubuntu-or-windows)
-1.		[Run on Docker](#run-on-docker)
-1.		[Training and Evaluation](#training-and-evaluation)
-1.				- [Training](#training)
-1.				- [Evaluation](#evaluation)
-1.		[Acknowledgement](#acknowledgement)
-1.	[Recognition](#recognition)
-1.		[Installation](#installation-1)
-1.		[Dataset](#dataset-1)
-1.		[Getting started](#getting-started)
-1.		[Acknowledgement](#acknowledgement-1)
+##Table of content
+###[Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
+###[Dataset](#dataset)
+#####[VinTextV2](#vintextv2)
+#####[Add your own dataset](#add-your-own-dataset)
+###[Detection](#detection)
+#####[Requirements](#requirements)
+#####[Installation](#installation)
+###[Run on Ubuntu or Windows](#run-on-ubuntu-or-windows)
+###[Run on Docker](#run-on-docker)
+#####[Training and Evaluation](#training-and-evaluation)
+- [Training](#training)
+- [Evaluation](#evaluation)
+#####[Acknowledgement](#acknowledgement)
+###[Recognition](#recognition)
+#####[Installation](#installation-1)
+#####[Dataset](#dataset-1)
+#####[Getting started](#getting-started)
+#####[Acknowledgement](#acknowledgement-1)
   
 # Vietnamese-scene-text-recognition
 
@@ -58,7 +55,7 @@ datasets
 You can download our label tool [here](https://drive.google.com/drive/folders/1XcUnjJ2eOcXM0JOlYjAVQnnKP2Xx8FHV?usp=sharing)
 ![tools](images/label_tool.png)
 
-## Dectection
+## Detection
 
 ##### Requirements
 
