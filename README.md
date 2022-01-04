@@ -3,6 +3,8 @@
 This is the solution that ranked 6th in [AI Challenge HCM 2021](https://aichallenge.hochiminhcity.gov.vn)
 
 ## Table of content
+#### [Introduction]
+coming soon
 ### [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
 ### [Dataset](#dataset)
 - [VinTextV2](#vintextv2)
@@ -20,7 +22,7 @@ This is the solution that ranked 6th in [AI Challenge HCM 2021](https://aichalle
 - [Installation](#installation-1)
 - [Dataset](#dataset-1)
 - [Getting started](#getting-started)
-- [Acknowledgement](#acknowledgement-1)
+#### [Acknowledgement](#acknowledgement-1)
   
 
 ### Dataset
@@ -52,7 +54,7 @@ datasets
 ---
 #### Add your own dataset
 You can download our label tool [here](https://drive.google.com/drive/folders/1XcUnjJ2eOcXM0JOlYjAVQnnKP2Xx8FHV?usp=sharing)
-![tools](images/label_tool.png)
+![tools](Detection/images/label_tool.png)
 
 ## Detection
 
