@@ -15,12 +15,11 @@ This is the solution that ranked 6th in [AI Challenge HCM 2021](https://aichalle
 ##### [Training and Evaluation](#training-and-evaluation)
 - [Training](#training)
 - [Evaluation](#evaluation)
-##### [Acknowledgement](#acknowledgement)
 ### [Recognition](#recognition)
 - [Installation](#installation-1)
 - [Dataset](#dataset-1)
 - [Getting started](#getting-started)
-#### [Acknowledgement](#acknowledgement-1)
+##### [Acknowledgement](#acknowledgement-1)
   
 
 ### Dataset
@@ -166,8 +165,6 @@ Example:
 ```sh
 python tools/train_net.py --eval-only --config-file configs/BAText/VinText/attn_R_50.yaml MODEL.WEIGHTS ./output/batext/vintext/trained_model.pth
 ```
-#### Acknowledgement
-This repository is built based-on [ABCNet](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/BAText)
 
 ## Recognition
 Using TransformerOCR
@@ -188,5 +185,5 @@ datasets
 - Using detection result in detection task. Then cut out the bounding box picture to train and predict.
 
 Followed this [Jupiter Notebook](https://github.com/Ton2808/Vietnamese-Language-Detection-and-Recognition/blob/main/Recognition/Train_AIC_vocr-2.ipynb) for quick start. 
-#### Acknowledgement
-This repository is built based-on [VietOCR](https://github.com/pbcquoc/vietocr)
+##### Acknowledgement
+This repository is built based-on [VietOCR](https://github.com/pbcquoc/vietocr) and  [ABCNet](https://github.com/aim-uofa/AdelaiDet/blob/master/configs/BAText)
