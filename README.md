@@ -3,7 +3,6 @@
 This is the solution that ranked 6th in [AI Challenge HCM 2021](https://aichallenge.hochiminhcity.gov.vn)
 
 ## Table of content
-#### [Introduction](#Introduction)
 ### [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
 ### [Dataset](#dataset)
 - [VinTextV2](#vintextv2)
@@ -23,8 +22,6 @@ This is the solution that ranked 6th in [AI Challenge HCM 2021](https://aichalle
 - [Getting started](#getting-started)
 #### [Acknowledgement](#acknowledgement-1)
   
-#### Introduction
-coming soon
 
 ### Dataset
 
