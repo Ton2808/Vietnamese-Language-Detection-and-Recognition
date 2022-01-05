@@ -4,6 +4,7 @@ This is the solution that ranked 6th in [AI Challenge HCM 2021](https://aichalle
 
 ## Table of content
 ### [Vietnamese-scene-text-recognition](#vietnamese-scene-text-recognition)
+-In this contest, the goal is to detect (detect) and recognize (recognize) text in images, specifically here will focus on text in the scene (scene text) recorded from many different camera sources. in Vietnam, as well as collected from google images.
 ### [Dataset](#dataset)
 - [VinTextV2](#vintextv2)
 - [Add your own dataset](#add-your-own-dataset)
