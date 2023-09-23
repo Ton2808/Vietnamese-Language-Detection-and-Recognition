@@ -1,0 +1,5 @@
+build/
+data/
+sample_output/
+*.zip
+venv/
